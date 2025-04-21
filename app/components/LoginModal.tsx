@@ -1,10 +1,9 @@
 
+'use client';
+
 const LoginModal = ({ isOpen, closeModal }: any) => {
   // funciona, mas NÃO é recomendado para produção
 }
-
-
-'use client';
 
 const LoginModal = ({ isOpen, closeModal }) => {
   if (!isOpen) return null;
