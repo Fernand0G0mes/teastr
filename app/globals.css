@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Paleta de cores fixas */
+:root {
+  /* Cores principais (adicionei às suas variáveis existentes) */
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-sans: var(--font-montserrat);
+  
+  /* Novas cores personalizadas */
+  --fundo: #ebc79f;      /* BACKGROUND */
+  --color-secondary: #21d448;    /* Verde Nutrana */
+  --color-accent: #80d421;       /* Verde claro */
+  --color-light: #ffeaea;        /* Rosa claro */
+  --color-dark: #1a1a1a;         /* Preto suave */
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  @apply font-sans;
+  margin: 0;
+  padding: 0;
+}
+
+/* Classes customizadas para as cores (opcional) */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+/* Repita para as outras cores (secondary, accent, etc) */
